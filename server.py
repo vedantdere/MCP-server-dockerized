@@ -14,6 +14,10 @@ def subtract(a: float, b: float) -> float:
     """Subtract two numbers and return the result."""
     return a - b
 
+@mcp.tool()
+def multiply(a: float, b: float) -> float:
+    """Multiply two numbers and return the result."""
+    return a * b
 
 if __name__ == "__main__":
     mcp.run(transport="http", host="0.0.0.0", port=8000)
